@@ -32,8 +32,7 @@
     "preopenapi-spec": "npm run build",
     "openapi-spec": "node ./dist/openapi-spec",
     "prestart": "npm run rebuild",
-    "start": "pm2 start ecosystem.config.js --env production",
-    "stop": "pm2 stop ecosystem.config.js --env production",
+    "start": "dist/index.js",
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
     "rebuild": "npm run clean && npm run build"
   },
